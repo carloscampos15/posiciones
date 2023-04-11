@@ -2,9 +2,16 @@ package services;
 
 import models.Equipo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class EquipoService {
+
+    private List<Equipo> equipos;
+
+    public EquipoService() {
+        this.equipos = new ArrayList<>();
+    }
 
     public void crearEquipo(){
 
