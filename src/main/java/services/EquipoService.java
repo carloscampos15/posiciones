@@ -12,11 +12,11 @@ public class EquipoService {
     private List<Grupo> grupos;
     private List<Equipo> equipos;
 
-    public EquipoService() {
+    public EquipoService(){
         this.equipos = new ArrayList<>();
     }
 
-    public void crearEquipo() {
+    public void crearEquipo(){
 
     }
 
@@ -44,17 +44,17 @@ public class EquipoService {
     }
 
     //wilmer
-    public Equipo obtenerEquipo(Long id) {
+    public Equipo obtenerEquipo(Long id){
         return null;
     }
 
     //jairo
-    public List<Equipo> obtenerEquipos() {
+    public List<Equipo> obtenerEquipos(){
         return null;
     }
 
     //Andres
-    public List<Equipo> obtenerEquiposByGrupo(Long grupoId) {
+    public List<Equipo> obtenerEquiposByGrupo(Long grupoId){
         return null;
     }
 
