@@ -19,8 +19,8 @@ public class EquipoController {
     }
 
     //elkin
-    public void actualizarEquipo(Equipo equipo) {
-        equipoService.actualizarEquipo(equipo);
+    public void actualizarEquipo(String oldName, String newName, Integer goles, char charGrupo) {
+        equipoService.actualizarEquipo(oldName, newName, goles, charGrupo);
     }
 
     //wilmer
