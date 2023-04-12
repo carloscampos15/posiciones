@@ -25,12 +25,12 @@ public class EquipoController {
 
     //wilmer
     public Equipo obtenerEquipo(Long id){
-        return null;
+        return this.equipoService.obtenerEquipo(id);
     }
 
     //jairo
     public List<Equipo> obtenerEquipos(){
-        return null;
+        return this.equipoService.obtenerEquipos();
     }
 
     //Andres
