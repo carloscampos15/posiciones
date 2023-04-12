@@ -30,7 +30,7 @@ public class EquipoController {
 
     //jairo
     public List<Equipo> obtenerEquipos(){
-        return null;
+        return this.equipoService.obtenerEquipos();
     }
 
     //Andres

@@ -29,7 +29,7 @@ public class EquipoService {
 
     //jairo
     public List<Equipo> obtenerEquipos(){
-        return null;
+        return this.equipos;
     }
 
     //Andres
