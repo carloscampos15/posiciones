@@ -12,8 +12,11 @@ public class EquipoService {
     private List<Grupo> grupos;
     private List<Equipo> equipos;
 
+    public EquipoService() {
+        this.equipos = new ArrayList<>();
+    }
 
-    public void crearEquipo() {
+    public void crearEquipo(){
 
     }
 
@@ -36,16 +39,7 @@ public class EquipoService {
 
     }
 
-    //wilmer
-    public Equipo obtenerEquipo(Long id) {
-        return null;
-    }
-    
-    //jairo
-    public List<Equipo> obtenerEquipos() {
-        return null;
-
-public Equipo obtenerEquipo(Long id){
+    public Equipo obtenerEquipo(Long id){
         return this.equipos.stream().filter(equipo -> equipo.getId().equals(id)).findFirst().get();
     }
 
@@ -55,8 +49,15 @@ public Equipo obtenerEquipo(Long id){
     }
 
     //Andres
-    public List<Equipo> obtenerEquiposByGrupo(Long grupoId) {
-        return null;
+    public List<Equipo> obtenerEquiposByGrupo(Long grupoId){
+
+        List<Equipo> equiposByGrupo = new ArrayList<>();
+        for (Equipo equipo : this.equipos) {
+            if (equipo.getGrupo().getId() == grupoId) {
+                equiposByGrupo.add(equipo);
+            }
+        }
+        return equiposByGrupo;
     }
 
 }
