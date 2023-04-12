@@ -9,7 +9,7 @@ public class EquipoController {
 
     private EquipoService equipoService;
 
-    public EquipoController() {
+    public EquipoController(){
         this.equipoService = new EquipoService();
     }
 
@@ -19,8 +19,8 @@ public class EquipoController {
     }
 
     //elkin
-    public void actualizarEquipo(){
-
+    public void actualizarEquipo(String oldName, String newName, Integer goles, char charGrupo) {
+        equipoService.actualizarEquipo(oldName, newName, goles, charGrupo);
     }
 
     //wilmer
