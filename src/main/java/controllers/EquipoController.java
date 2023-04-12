@@ -35,8 +35,7 @@ public class EquipoController {
 
     //Andres
     public List<Equipo> obtenerEquiposByGrupo(Long grupoId){
-        return this.equipoService.obtenerEquiposByGrupo(grupoId);
-
+        return null;
     }
 
 }
