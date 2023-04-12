@@ -25,7 +25,7 @@ public class EquipoController {
 
     //wilmer
     public Equipo obtenerEquipo(Long id){
-        return null;
+        return this.equipoService.obtenerEquipo(id);
     }
 
     //jairo
