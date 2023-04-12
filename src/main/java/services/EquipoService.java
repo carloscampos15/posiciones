@@ -2,9 +2,16 @@ package services;
 
 import models.Equipo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class EquipoService {
+
+    private List<Equipo> equipos;
+
+    public EquipoService() {
+        this.equipos = new ArrayList<>();
+    }
 
     public void crearEquipo(){
 
@@ -27,7 +34,14 @@ public class EquipoService {
 
     //Andres
     public List<Equipo> obtenerEquiposByGrupo(Long grupoId){
-        return null;
+
+        List<Equipo> equiposByGrupo = new ArrayList<>();
+        for (Equipo equipo : this.equipos) {
+            if (equipo.getGrupo().getId() == grupoId) {
+                equiposByGrupo.add(equipo);
+            }
+        }
+        return equiposByGrupo;
     }
 
 }
